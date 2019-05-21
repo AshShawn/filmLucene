@@ -1,0 +1,68 @@
+package com.lucene.test;
+
+import java.util.ArrayList;
+
+/**
+ * 定义表格的数据对象
+ * @author JIANGYOUYAO
+ * @email 935090232@qq.com
+ * @date 2017年12月20日
+ */
+public class ExcelSheetPO {
+
+    /**
+     * sheet的名称
+     */
+    private String sheetName;
+
+ 
+    /**
+     * 表格标题
+     */
+    private String title;
+
+    /**
+     * 头部标题集合
+     */
+    private String[] headers;
+
+    /**
+     * 数据集合
+     */
+    private ArrayList<ArrayList<Object>> dataList;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String[] getHeaders() {
+        return headers;
+    }
+
+    public void setHeaders(String[] headers) {
+        this.headers = headers;
+    }
+
+    public ArrayList<ArrayList<Object>> getDataList() {
+        return dataList;
+    }
+
+    public void setDataList(ArrayList<ArrayList<Object>> dataList) {
+        this.dataList = dataList;
+    }
+
+    public String getSheetName() {
+        return sheetName;
+    }
+
+    public void setSheetName(String sheetName) {
+        this.sheetName = sheetName;
+    }
+    
+    
+
+}
